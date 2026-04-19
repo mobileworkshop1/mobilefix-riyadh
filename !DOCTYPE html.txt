@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ورشة متنقلة بالرياض - صيانة سيارات متنقلة في الرياض لجميع أنواع السيارات الأمريكية والصينية والألمانية. صيانة ميكانيكية شاملة، تغيير استهلاكيات، إصلاح أعطال ميكانيكية. احجز الآن في مكانك!">
+    <title>ورشة متنقلة بالرياض | موبيل فكس - صيانة سيارات متنقلة في الرياض</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        body { font-family: 'Cairo', sans-serif; }
+        .hero-bg { 
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('https://picsum.photos/id/1018/2000/1200') center/cover; 
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-car text-4xl text-blue-600"></i>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">موبايل فكس</h1>
+                    <p class="text-xs text-blue-600 -mt-1">ورشة متنقلة بالرياض</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-lg">
+                <a href="#home" class="hover:text-blue-600">الرئيسية</a>
+                <a href="#services" class="hover:text-blue-600">خدماتنا</a>
+                <a href="#how" class="hover:text-blue-600">كيف نعمل</a>
+                <a href="#agreement" class="hover:text-blue-600">اتفاقية الخدمة</a>
+                <a href="#booking" class="hover:text-blue-600">احجز الآن</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="showLoginModal()" class="px-6 py-2 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">
+                    <i class="fa-solid fa-user"></i> دخول
+                </button>
+                <button onclick="showBooking()" class="bg-blue-600 text-white px-8 py-2 rounded-full font-semibold hover:bg-blue-700">احجز الآن</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero-bg text-white py-28">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">ورشة متنقلة بالرياض</h1>
+            <h2 class="text-6xl font-bold mb-6">صيانة سيارتك في مكانك!</h2>
+            <p class="text-3xl mb-8">خدمات متنقلة لكل السيارات الأمريكية • الصينية • الألمانية</p>
+            <div class="flex justify-center gap-4">
+                <button onclick="showBooking()" class="bg-green-500 hover:bg-green-600 text-white text-2xl px-12 py-5 rounded-2xl font-bold">احجز صيانة الآن</button>
+                <a href="https://wa.me/966548584958" target="_blank" class="flex items-center gap-3 bg-white text-gray-900 text-2xl px-10 py-5 rounded-2xl font-bold">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-4xl"></i> 
+                    0548584958
+                </a>
+            </div>
+            <p class="mt-10 text-xl">نصلك في أقل من 60 دقيقة • فنيين معتمدين</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">خدماتنا الشاملة</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-oil-can text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">تغيير زيت وفلاتر</h3></div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-car-battery text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">استبدال بطارية</h3></div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-tire text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">إصلاح وتوازن إطارات</h3></div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-snowflake text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">صيانة تكييف</h3></div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-car text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">فحص كهربائي كامل</h3></div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-brake-warning text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">إصلاح فرامل</h3></div>
+                <!-- الخدمات الميكانيكية الجديدة -->
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-wrench text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">صيانة ميكانيكية شاملة</h3></div>
+                <div class="bg-gray-50 p-8 rounded-3xl text-center hover:shadow-xl transition"><i class="fa-solid fa-cogs text-5xl text-blue-600 mb-4"></i><h3 class="font-bold">تغيير الاستهلاكيات وإصلاح أعطال ميكانيكية</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Types -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-10">نخدم كل أنواع السيارات</h2>
+            <div class="flex justify-center gap-12 text-2xl">
+                <div><i class="fa-solid fa-flag-usa text-6xl mb-3"></i><p>سيارات أمريكية</p></div>
+                <div><i class="fa-solid fa-car-side text-6xl mb-3 text-red-500"></i><p>سيارات صينية</p></div>
+                <div><i class="fa-solid fa-car-side text-6xl mb-3 text-yellow-400"></i><p>سيارات ألمانية</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">كيف نعمل؟</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div><div class="text-6xl mb-4">1️⃣</div><p class="font-bold">احجز أونلاين أو واتساب</p></div>
+                <div><div class="text-6xl mb-4">2️⃣</div><p class="font-bold">نصلك في مكانك بالرياض</p></div>
+                <div><div class="text-6xl mb-4">3️⃣</div><p class="font-bold">صيانة فورية</p></div>
+                <div><div class="text-6xl mb-4">4️⃣</div><p class="font-bold">ادفع بعد الخدمة نقداً</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- اتفاقية الخدمة -->
+    <section id="agreement" class="py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">اتفاقية الخدمة</h2>
+            <div class="bg-white rounded-3xl p-10 shadow-lg text-lg leading-relaxed space-y-8 text-gray-700">
+                <p>يقر العميل ويوافق على أن ورشة الصيانة المتنقلة غير مسؤولة بأي شكل من الأشكال عن جودة أو كفاءة أو سلامة قطع الغيار المستخدمة، سواء كانت جديدة أو مستعملة، وتبقى المسؤولية الكاملة على مزود القطعة (البائع).</p>
+                <p>وفي حال قيام الورشة بتوفير قطع الغيار للعميل مقابل رسوم، فإن ذلك يتم بناءً على طلب العميل ولغرض تسهيل الخدمة فقط، دون أي ضمانات صريحة أو ضمنية على جودة القطع أو عمرها الافتراضي أو أدائها، ولا تتحمل الورشة أي مسؤولية عن أي أعطال أو أضرار ناتجة عنها.</p>
+                <p>كما يقر العميل بأن قطع الغيار، بطبيعتها، معرضة للتلف أو العطل في أي وقت و يقر العميل بأن خدمة الفحص الفني المقدمة من الورشة هي لأغراض تشخيص العطل بناءً على الخبرة العملية والتجارب السابقة، وهي اجتهاد مهني قابل للصواب والخطأ، ولا تُعد تأكيدًا نهائيًا بنسبة 100% لطبيعة العطل.</p>
+                <p>كما يقر العميل بأن بعض المركبات قد تحتوي على أعطال متعددة ومتزامنة، سواء نتيجة عيوب مصنعية أو بسبب عمر المركبة واستهلاكها، وقد يظهر عطل بعد إصلاح عطل آخر. وتُحتسب جميع أعمال الفحص والتشخيص والإصلاح بالساعة أو حسب الاتفاق، ولا يُعفى العميل من رسوم العمل الفني في جميع الأحوال، بغض النظر عن نتيجة التشخيص أو تعدد الأعطال.</p>
+                <p>ولا تتحمل الورشة أي مسؤولية عن العيوب المصنعية أو الحالة العامة للمركبة، كما لا تعتبر مسؤولة عن أي نتائج ناتجة عن تلك العوامل الخارجة عن نطاق العمل الفني.</p>
+                <div class="pt-8 border-t text-center text-sm text-gray-500 font-semibold">
+                    بالضغط على "تأكيد الحجز" فأنت توافق تمامًا على جميع بنود هذه الاتفاقية
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-blue-50">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-10">
+            <h2 class="text-4xl font-bold text-center mb-8">احجز صيانة متنقلة الآن</h2>
+            <form id="bookingForm" onsubmit="handleBooking(event)">
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-2 font-semibold">نوع السيارة</label>
+                        <select id="carType" class="w-full border rounded-2xl p-4">
+                            <option>أمريكية</option>
+                            <option>صينية</option>
+                            <option>ألمانية</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-semibold">نوع الخدمة</label>
+                        <select id="service" class="w-full border rounded-2xl p-4">
+                            <option>تغيير زيت</option>
+                            <option>إصلاح إطارات</option>
+                            <option>بطارية</option>
+                            <option>تكييف</option>
+                            <option>فرامل</option>
+                            <option>صيانة ميكانيكية</option>
+                            <option>تغيير استهلاكيات</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <label class="block mb-2 font-semibold">التاريخ والوقت</label>
+                    <input type="date" id="date" class="w-full border rounded-2xl p-4">
+                </div>
+                <div class="mt-6">
+                    <label class="block mb-2 font-semibold">الحي في الرياض</label>
+                    <input type="text" id="location" placeholder="مثال: الملقا، النرجس، الرياض" class="w-full border rounded-2xl p-4">
+                </div>
+                <div class="mt-6">
+                    <label class="block mb-2 font-semibold">وصف المشكلة (اختياري)</label>
+                    <textarea id="description" rows="3" class="w-full border rounded-3xl p-4"></textarea>
+                </div>
+                <button type="submit" class="mt-10 w-full bg-green-500 hover:bg-green-600 text-white py-5 text-2xl rounded-3xl font-bold">تأكيد الحجز</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>© 2026 موبيل فكس الرياض - ورشة متنقلة بالرياض</p>
+            <p class="mt-2">خدمة 24 ساعة • الرياض • 0548584958</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal & Dashboard (نفس السابق) -->
+    <div id="loginModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+        <div class="bg-white rounded-3xl p-10 w-96">
+            <h3 class="text-3xl font-bold mb-6 text-center">تسجيل الدخول</h3>
+            <input id="email" type="email" placeholder="الإيميل" class="w-full border rounded-2xl p-4 mb-4">
+            <input id="password" type="password" placeholder="كلمة السر" class="w-full border rounded-2xl p-4 mb-6">
+            <button onclick="login()" class="w-full bg-blue-600 text-white py-4 rounded-2xl text-xl">دخول</button>
+            <p onclick="hideLoginModal()" class="text-center mt-6 text-gray-500 cursor-pointer">إغلاق</p>
+        </div>
+    </div>
+
+    <div id="dashboard" class="hidden fixed inset-0 bg-white z-[100] overflow-auto">
+        <div class="max-w-7xl mx-auto p-8">
+            <div class="flex justify-between mb-8">
+                <h2 class="text-4xl font-bold">لوحة تحكم الإدمن</h2>
+                <button onclick="logout()" class="px-8 py-3 bg-red-600 text-white rounded-2xl">خروج</button>
+            </div>
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="p-4 text-right">رقم الحجز</th>
+                        <th class="p-4 text-right">العميل</th>
+                        <th class="p-4 text-right">نوع السيارة</th>
+                        <th class="p-4 text-right">الخدمة</th>
+                        <th class="p-4 text-right">التاريخ</th>
+                        <th class="p-4 text-right">الحالة</th>
+                        <th class="p-4">إجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingsTable" class="text-sm"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // نفس الكود السابق (الدخول + الحجوزات + لوحة التحكم)
+        function showLoginModal() { document.getElementById('loginModal').classList.remove('hidden'); }
+        function hideLoginModal() { document.getElementById('loginModal').classList.add('hidden'); }
+
+        let currentUser = null;
+
+        function login() {
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('password').value;
+            const users = {
+                'admin@mobilefix.com': { pass: 'admin123', role: 'admin', name: 'الإدمن' },
+                'customer@demo.com': { pass: '1234', role: 'customer', name: 'أحمد العميل' }
+            };
+            if (users[email] && users[email].pass === pass) {
+                currentUser = { email, ...users[email] };
+                hideLoginModal();
+                alert(`تم تسجيل الدخول بنجاح! مرحبا ${currentUser.name}`);
+                if (currentUser.role === 'admin') {
+                    document.getElementById('dashboard').classList.remove('hidden');
+                    renderBookings();
+                }
+            } else {
+                alert('بيانات خاطئة! جرب admin@mobilefix.com / admin123');
+            }
+        }
+
+        function logout() {
+            currentUser = null;
+            document.getElementById('dashboard').classList.add('hidden');
+        }
+
+        let bookings = JSON.parse(localStorage.getItem('bookings')) || [
+            { id: 1, customer: 'أحمد', car: 'ألمانية', service: 'تغيير زيت', date: '2026-04-22', status: 'قيد الانتظار' },
+            { id: 2, customer: 'خالد', car: 'أمريكية', service: 'بطارية', date: '2026-04-23', status: 'مكتمل' }
+        ];
+
+        function saveBookings() { localStorage.setItem('bookings', JSON.stringify(bookings)); }
+
+        function renderBookings() {
+            const tbody = document.getElementById('bookingsTable');
+            tbody.innerHTML = '';
+            bookings.forEach((b, index) => {
+                const row = document.createElement('tr');
+                row.className = 'border-b hover:bg-gray-50';
+                row.innerHTML = `
+                    <td class="p-4">${b.id}</td>
+                    <td class="p-4">${b.customer}</td>
+                    <td class="p-4">${b.car}</td>
+                    <td class="p-4">${b.service}</td>
+                    <td class="p-4">${b.date}</td>
+                    <td class="p-4"><span class="px-4 py-1 rounded-full ${b.status==='مكتمل'?'bg-green-100 text-green-700':'bg-yellow-100 text-yellow-700'}">${b.status}</span></td>
+                    <td class="p-4">
+                        <button onclick="updateStatus(${index})" class="text-green-600 mx-2">✅</button>
+                        <button onclick="deleteBooking(${index})" class="text-red-600">🗑️</button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function updateStatus(i) {
+            bookings[i].status = bookings[i].status === 'قيد الانتظار' ? 'مكتمل' : 'قيد الانتظار';
+            saveBookings();
+            renderBookings();
+        }
+
+        function deleteBooking(i) {
+            if (confirm('حذف الحجز؟')) {
+                bookings.splice(i, 1);
+                saveBookings();
+                renderBookings();
+            }
+        }
+
+        function handleBooking(e) {
+            e.preventDefault();
+            const newBooking = {
+                id: bookings.length + 1,
+                customer: currentUser ? currentUser.name : 'عميل جديد',
+                car: document.getElementById('carType').value,
+                service: document.getElementById('service').value,
+                date: document.getElementById('date').value,
+                status: 'قيد الانتظار'
+            };
+            bookings.push(newBooking);
+            saveBookings();
+            alert('✅ تم تسجيل الحجز بنجاح! سيتواصل معك الفريق قريباً');
+            e.target.reset();
+            if (currentUser && currentUser.role === 'admin') renderBookings();
+        }
+
+        function showBooking() {
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
